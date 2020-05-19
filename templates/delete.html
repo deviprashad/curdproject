@@ -10,15 +10,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <img src="{% static 'images/insert.jpg' %}">
+    <img src="{% static 'images/delete.jpg' %}">
     <div class="container">
         <div class="row">
             <div class="col-md-offset col-md-4">
                 <form method="post">
                     {% csrf_token %}
-                    {{ insert.as_p }}
-                     <input type="submit" value="submit" class="btn btn-success">
-                     <input type="reset" value="reset" class="btn btn-default">
+                    {{ delete.as_p }}
+                    <input type="submit" value="delete" class="btn btn-danger">
+                    <input type="reset" value="reset" class="btn btn-default">
                 </form>
             </div>
         </div>

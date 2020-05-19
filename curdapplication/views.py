@@ -34,7 +34,7 @@ def insert(request):
         return render(request, 'insert.html', {'insert': iform})
 def retrive(request):
     data=ProductData.objects.all()
-    return render(request,'retrive.html',{'insert':data})
+    return render(request,'retrive.html',{'retrive':data})
 def update(request):
     if request.method=="POST":
         uform=ProductUpdateForm(request.POST)

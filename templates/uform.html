@@ -1,7 +1,7 @@
 {% load staticfiles %}
 <html>
 <head>
-    <title></title>
+    <title>UPDATE</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -10,15 +10,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <img src="{% static 'images/insert.jpg' %}">
+    <img src="{% static 'images/update.jpg' %}">
     <div class="container">
         <div class="row">
             <div class="col-md-offset col-md-4">
                 <form method="post">
                     {% csrf_token %}
-                    {{ insert.as_p }}
-                     <input type="submit" value="submit" class="btn btn-success">
-                     <input type="reset" value="reset" class="btn btn-default">
+                    {{ update.as_p }}
+                    <input type="submit" value="submit" class="btn btn-success">
+                    <input type="reset" value="reset" class="btn btn-default">
                 </form>
             </div>
         </div>
