@@ -19,6 +19,7 @@ from curdapplication import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/',views.home),
     path('insert/',views.insert),
     path('retrive/',views.retrive),
     path('update/',views.update),

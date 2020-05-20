@@ -2,6 +2,8 @@ from django.shortcuts import render
 from .forms import ProductInsertForm,ProductDeleteForm,ProductUpdateForm
 from .models import ProductData
 from django.http import HttpResponse
+def home(request):
+    return render(request,'home.html')
 def insert(request):
     if request.method=="POST":
         iform=ProductInsertForm(request.POST)
